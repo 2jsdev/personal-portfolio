@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   const handleScroll = () => {
     const position = window.pageYOffset;
 
-    // Si la posición actual es mayor o igual a 50, se añade la clase scroll-header al elemento header, de lo contrario se quita
+    // If the current position is greater than or equal to 50, the scroll-header class is added to the header element, otherwise it is removed
     setScrolling(position >= 50);
   };
 
@@ -95,9 +95,9 @@ const Header: React.FC = () => {
 
             <li className="nav_item">
               <a
-                href="#work"
+                href="#portfolio"
                 className={`nav__link ${
-                  activeLink === "#work" && "active-link"
+                  activeLink === "#portfolio" && "active-link"
                 }`}
               >
                 <i className="bx bx-briefcase-alt-2" />
@@ -116,7 +116,6 @@ const Header: React.FC = () => {
             </li>
           </ul>
         </div>
-        {/* Theme change button */}
         <i
           onClick={() => toggleTheme()}
           className={`${
