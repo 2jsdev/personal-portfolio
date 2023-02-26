@@ -3,8 +3,8 @@ import React from "react";
 const Skills: React.FC = () => {
   return (
     <section className="skills section" id="skills">
-      <span className="section__subtitle">My abilities</span>
-      <h2 className="section__title">My Experience</h2>
+      <h2 className="section__title">Skills</h2>
+      <span className="section__subtitle">My technical level</span>
 
       <div className="skills__container container grid">
         <div className="skills__content">
@@ -38,8 +38,6 @@ const Skills: React.FC = () => {
             </div>
 
             <div className="skills__group">
-              
-
               <div className="skills__data">
                 <i className="bx bxs-badge-check" />
                 <div>
