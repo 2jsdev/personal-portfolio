@@ -1,0 +1,134 @@
+{
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Jordy Morales Roman",
+    "education": "Desarrollador Full-stack",
+    "button": {
+      "download": "Descargar CV",
+      "talk": "Hablemos"
+    },
+    "scroll_down": "Descender"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Mi presentación",
+    "info": {
+      "experience": {
+        "title": "Experiencia",
+        "subtitle": "Más de 4 años trabajando"
+      },
+      "projects": {
+        "title": "Proyectos completados",
+        "subtitle": "Más de 10 proyectos"
+      },
+      "companies": {
+        "title": "Empresas en las que trabajé",
+        "subtitle": "3 empresas"
+      }
+    },
+    "description": "Desarrollador Full-stack con más de 4 años de experiencia desarrollando aplicaciones web utilizando JavaScript, TypeScript, ReactJS, NodeJS y servicios (REST) aplicando patrones y arquitecturas de diseño. Soy entusiasta de aprender tecnologías, siempre trato de aprender cosas nuevas. Buscando ser parte de un equipo innovador.",
+    "button": "Contáctame"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Mi nivel técnico",
+    "frontend": "Desarrollador Frontend",
+    "backend": "Desarrollador Backend",
+    "level": {
+      "basic": "Básico",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado"
+    },
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "JavaScript": "JavaScript",
+    "React": "React",
+    "Git": "Git",
+    "TypeScript": "TypeScript",
+    "Node.js": "Node.js",
+    "NestJS": "NestJS",
+    "Python": "Python",
+    "MySQL": "MySQL",
+    "PostgreSQL": "PostgreSQL",
+    "MongoDB": "MongoDB"
+  },
+  "qualification": {
+    "title": "Calificación",
+    "subtitle": "Mi trayectoria personal",
+    "tabs": {
+      "work": {
+        "title": "Experiencia laboral",
+        "unosquare": {
+          "title": "Desarrollador Full-stack",
+          "subtitle": "Unosquare - Bolivia",
+          "calendar": "Jun 2021 - Presente"
+        },
+        "nearshore": {
+          "title": "Desarrollador Full-stack",
+          "subtitle": "Nearshore Code - Bolivia",
+          "calendar": "Jun 2021 - Presente"
+        },
+        "viva": {
+          "title": "Desarrollador Web",
+          "subtitle": "VIVA - Bolivia",
+          "calendar": "Jul 2018 - Dic 2018"
+        }
+      },
+      "education": {
+        "title": "Educación",
+        "university": {
+          "title": "Ingeniero de Sistemas",
+          "subtitle": "Bolivia - Universidad",
+          "calendar": "Feb 2019 - Ago 2021"
+        },
+        "institute": {
+          "title": "Analista en Sistemas Informáticos",
+          "subtitle": "Bolivia - Instituto",
+          "calendar": "Mar 2015 - Jul 2018"
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Trabajos más recientes",
+    "filters": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Diseño"
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Ponte en contacto",
+    "content": {
+      "title": "Háblame",
+      "email": "Correo electrónico",
+      "whatsapp": "WhatsApp",
+      "write_me": "Escríbeme"
+    },
+    "form": {
+      "title": "Escríbeme sobre tu proyecto",
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre completo"
+      },
+      "mail": {
+        "label": "Correo electrónico",
+        "placeholder": "Tu correo electrónico"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Tu mensaje"
+      },
+      "button": "Enviar mensaje"
+    }
+  },
+  "footer": {
+    "name": "Jordy",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos"
+  }
+}

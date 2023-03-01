@@ -1,0 +1,64 @@
+@import url("../../foundations/main.css");
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: 0.4s;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: 0.4s;
+}
+
+.nav__logo:hover {
+  color: var(--first-color-alt);
+}
+
+/* Change background header */
+.scroll-header {
+  /* background-color: var(--body-color); */
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
+}
+
+.light-theme .scroll-header {
+  box-shadow: 0 2px 4px hsla(0, 0% 1%, 0.1);
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 125px;
+  height: 50px;
+}
+
+/*=============== THEME ===============*/
+.change-theme {
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+}

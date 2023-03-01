@@ -1,0 +1,30 @@
+@import url("../../foundations/main.css");
+
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: var(--first-color);
+  transition: background-color 0.3s;
+}
+
+.switch.checked {
+  background-color: var(--first-color-alt);
+}
+
+.switch-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--body-color);
+}

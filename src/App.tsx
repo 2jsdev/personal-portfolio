@@ -1,39 +1,35 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { ThemeProvider } from "./context/ThemeContext";
+import { LocaleProvider } from "./context/LocaleContext";
 import Header from "./components/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Qualification from "./sections/Qualification";
 import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
-import Skills from "./sections/Skills";
 import Footer from "./components/Footer";
-import ScrollReveal from "scrollreveal";
-import Qualification from "./sections/Qualification";
-
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: 400,
-});
+import Spinner from "./components/Spinner";
 
 const App: React.FC = () => {
-  useEffect(() => {
-    sr.reveal(`.home__data`);
-    sr.reveal(`.home__handle`, { delay: 700 });
-    sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
-  }, []);
+  const { i18n } = useTranslation();
+  const i18nInitialized = i18n.isInitialized;
+
+  if (!i18nInitialized) return <Spinner />;
 
   return (
     <ThemeProvider>
-      <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Qualification />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <LocaleProvider>
+        <Header />
+        <Home />
+        <About />
+        <Skills />
+        <Qualification />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </LocaleProvider>
     </ThemeProvider>
   );
 };

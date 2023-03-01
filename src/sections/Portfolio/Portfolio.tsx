@@ -1,15 +1,19 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import mixitup from "mixitup";
+import "./Portfolio.css";
+
+const ACTIVE_CLASS = "active-portfolio";
 
 const Portfolio: React.FC = () => {
-  const activeClass = "active-portfolio";
+  const { t } = useTranslation();
 
   useEffect(() => {
     const tabs = document.querySelectorAll(".portfolio__item");
 
     function activeWork(this: any) {
-      tabs.forEach((tab) => tab.classList.remove(activeClass));
-      this.classList.add(activeClass);
+      tabs.forEach((tab) => tab.classList.remove(ACTIVE_CLASS));
+      this.classList.add(ACTIVE_CLASS);
     }
 
     tabs.forEach((tab) => tab.addEventListener("click", activeWork));
@@ -36,21 +40,21 @@ const Portfolio: React.FC = () => {
 
   return (
     <section className="portfolio section" id="portfolio">
-      <h2 className="section__title">Portfolio</h2>
-      <span className="section__subtitle">Most recent work</span>
+      <h2 className="section__title">{t("portfolio.title")}</h2>
+      <span className="section__subtitle">{t("portfolio.subtitle")}</span>
 
       <div className="portfolio__filters">
         <span className="portfolio__item active-portfolio" data-filter="all">
-          All
+          {t("portfolio.filters.all")}
         </span>
         <span className="portfolio__item" data-filter=".frontend">
-          Frontend
+          {t("portfolio.filters.frontend")}
         </span>
         <span className="portfolio__item" data-filter=".backend">
-          Backend
+          {t("portfolio.filters.backend")}
         </span>
         <span className="portfolio__item" data-filter=".design">
-          Design
+          {t("portfolio.filters.design")}
         </span>
       </div>
 

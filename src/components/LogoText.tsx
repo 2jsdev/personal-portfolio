@@ -202,7 +202,7 @@ const LogoText = ({ size = 110, ...props }: LogoProps) => {
         </g>
       </g>
       <g
-        fill={theme === "dark" ? "rgba(255, 255, 255, 0.87)" : "#242424"}
+        fill={theme === "dark" ? "rgba(255, 255, 255, 0.87)" : "rgb(0,0,0, 0.87)"}
         fillOpacity="1"
       >
         <g transform="translate(237.661359, 217.483344)">
@@ -212,7 +212,7 @@ const LogoText = ({ size = 110, ...props }: LogoProps) => {
         </g>
       </g>
       <g
-        fill={theme === "dark" ? "rgba(255, 255, 255, 0.87)" : "#242424"}
+        fill={theme === "dark" ? "rgba(255, 255, 255, 0.87)" : "rgb(0,0,0, 0.87)"}
         fillOpacity="1"
       >
         <g transform="translate(260.172813, 217.483344)">
@@ -222,7 +222,7 @@ const LogoText = ({ size = 110, ...props }: LogoProps) => {
         </g>
       </g>
       <g
-        fill={theme === "dark" ? "rgba(255, 255, 255, 0.87)" : "#242424"}
+        fill={theme === "dark" ? "rgba(255, 255, 255, 0.87)" : "rgb(0,0,0, 0.87)"}
         fillOpacity="1"
       >
         <g transform="translate(297.691899, 217.483344)">
