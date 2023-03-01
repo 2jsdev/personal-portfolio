@@ -10,13 +10,16 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
-    "@react-three/drei": "^9.56.25",
+    "@react-three/drei": "^9.56.27",
+    "i18next": "^22.4.10",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.1.1",
     "mixitup": "^3.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
     "react-three-fiber": "^6.0.13",
-    "scrollreveal": "^4.0.9",
-    "three": "^0.149.0",
+    "three": "^0.150.0",
     "three-stdlib": "^2.21.8"
   },
   "devDependencies": {

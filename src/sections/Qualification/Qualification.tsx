@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import "./Qualification.css";
+
+const ACTIVE_CLASS = "qualification__active";
 
 const Qualification: React.FC = () => {
-  const activeClass = "qualification__active";
+  const { t } = useTranslation();
 
   useEffect(() => {
     const tabs = document.querySelectorAll("[data-target]");
@@ -11,14 +15,14 @@ const Qualification: React.FC = () => {
       const target = document.querySelector(this.dataset.target);
 
       tabContents.forEach((tabContent) => {
-        tabContent.classList.remove(activeClass);
+        tabContent.classList.remove(ACTIVE_CLASS);
       });
-      target.classList.add(activeClass);
+      target.classList.add(ACTIVE_CLASS);
 
       tabs.forEach((tab) => {
-        tab.classList.remove(activeClass);
+        tab.classList.remove(ACTIVE_CLASS);
       });
-      this.classList.add(activeClass);
+      this.classList.add(ACTIVE_CLASS);
     }
 
     tabs.forEach((tab) => {
@@ -34,25 +38,24 @@ const Qualification: React.FC = () => {
 
   return (
     <div className="qualification section" id="qualification">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My personal journey</span>
+      <h2 className="section__title">{t("qualification.title")}</h2>
+      <span className="section__subtitle">{t("qualification.subtitle")}</span>
 
       <div className="qualification__container container grid">
         <div className="qualification__tabs">
           <div
             className="qualification__button button-flex qualification__active"
-            data-target="#education"
-          >
-            <i className="bx bxs-graduation qualification__icon" />
-            Education
-          </div>
-
-          <div
-            className="qualification__button button-flex"
             data-target="#work"
           >
             <i className="bx bx-briefcase-alt qualification__icon" />
-            Work
+            {t("qualification.tabs.work.title")}
+          </div>
+          <div
+            className="qualification__button button-flex "
+            data-target="#education"
+          >
+            <i className="bx bxs-graduation qualification__icon" />
+            {t("qualification.tabs.education.title")}
           </div>
         </div>
 
@@ -60,17 +63,19 @@ const Qualification: React.FC = () => {
           <div
             className="qualification__content qualification__active"
             data-content
-            id="education"
+            id="work"
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">System Engineer</h3>
+                <h3 className="qualification__title">
+                  {t("qualification.tabs.work.unosquare.title")}
+                </h3>
                 <span className="qualification__subtitle">
-                  Bolivia - University
+                  {t("qualification.tabs.work.unosquare.subtitle")}
                 </span>
                 <div className="qualification__calendar">
                   <i className="bx bxs-calendar" />
-                  Feb 2019 - Aug 2021
+                  {t("qualification.tabs.work.unosquare.calendar")}
                 </div>
               </div>
               <div>
@@ -83,71 +88,77 @@ const Qualification: React.FC = () => {
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
-                {/* <span className="qualification__line"></span> */}
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">
+                  {t("qualification.tabs.work.nearshore.title")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.tabs.work.nearshore.subtitle")}
+                </span>
+                <div className="qualification__calendar">
+                  <i className="bx bxs-calendar" />
+                  {t("qualification.tabs.work.nearshore.calendar")}
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                  {t("qualification.tabs.work.viva.title")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.tabs.work.viva.subtitle")}
+                </span>
+                <div className="qualification__calendar">
+                  <i className="bx bxs-calendar" />
+                  {t("qualification.tabs.work.viva.calendar")}
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+              </div>
+            </div>
+          </div>
+          <div className="qualification__content " data-content id="education">
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                  {t("qualification.tabs.education.university.title")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.tabs.education.university.subtitle")}
+                </span>
+                <div className="qualification__calendar">
+                  <i className="bx bxs-calendar" />
+                  {t("qualification.tabs.education.university.calendar")}
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
               </div>
 
               <div>
                 <h3 className="qualification__title">
-                  Computer Systems Analyst
+                  {t("qualification.tabs.education.institute.title")}
                 </h3>
                 <span className="qualification__subtitle">
-                  Bolivia - Institute
+                  {t("qualification.tabs.education.institute.subtitle")}
                 </span>
                 <div className="qualification__calendar">
                   <i className="bx bxs-calendar" />
-                  Mar 2015 - Jul 2018
+                  {t("qualification.tabs.education.institute.calendar")}
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="qualification__content" data-content id="work">
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Full-stack Developer</h3>
-                <span className="qualification__subtitle">
-                  Unosquare - Bolivia
-                </span>
-                <div className="qualification__calendar">
-                  <i className="bx bxs-calendar" />
-                  Jun 2021 - Present
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">Full-stack Developer</h3>
-                <span className="qualification__subtitle">
-                  Nearshore Code - Bolivia
-                </span>
-                <div className="qualification__calendar">
-                  <i className="bx bxs-calendar" />
-                  Jan 2019 - Jun 2021
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Web Developer</h3>
-                <span className="qualification__subtitle">VIVA - Bolivia</span>
-                <div className="qualification__calendar">
-                  <i className="bx bxs-calendar" />
-                  Jul 2018 - Dec 2018
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
               </div>
             </div>
           </div>

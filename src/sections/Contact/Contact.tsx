@@ -1,12 +1,17 @@
 import React, { useRef, FormEvent } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
 const serviceId = import.meta.env.VITE_SERVICE_ID ?? "";
 const templateId = import.meta.env.VITE_TEMPLATE_ID ?? "";
 const publicKey = import.meta.env.VITE_PUBLIC_KEY ?? "";
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
+
   const form = useRef<HTMLFormElement>(null);
+
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -25,17 +30,19 @@ const Contact: React.FC = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Contact Me</h2>
-      <span className="section__subtitle">Get in touch</span>
+      <h2 className="section__title">{t("contact.title")}</h2>
+      <span className="section__subtitle">{t("contact.subtitle")}</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title">{t("contact.content.title")}</h3>
 
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon" />
-              <h3 className="contact__card-title">Email</h3>
+              <h3 className="contact__card-title">
+                {t("contact.content.email")}
+              </h3>
               <span className="contact__card-data">
                 dev.morales.jordy@gmail.com
               </span>
@@ -44,21 +51,23 @@ const Contact: React.FC = () => {
                 href="mailto:dev.morales.jordy@gmail.com"
                 className="contact__button"
               >
-                Write me{" "}
+                {t("contact.content.write_me")}
                 <i className="bx bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>
 
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon" />
-              <h3 className="contact__card-title">WhatsApp</h3>
+              <h3 className="contact__card-title">
+                {t("contact.content.whatsapp")}
+              </h3>
               <span className="contact__card-data">+59161787036</span>
 
               <a
                 href="https://api.whatsapp.com/send?phone=59161787036&text=Hello, more information!"
                 className="contact__button"
               >
-                Write me{" "}
+                {t("contact.content.write_me")}
                 <i className="bx bx-right-arrow-alt contact__button-icon" />
               </a>
             </div>
@@ -66,17 +75,17 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">{t("contact.form.title")}</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
               <label htmlFor="" className="contact__form-tag">
-                Name
+                {t("contact.form.name.label")}
               </label>
               <input
                 type="text"
                 name="user_name"
-                placeholder="Your Full Name"
+                placeholder={t("contact.form.name.placeholder") || ""}
                 className="contact__form-input"
                 required
               />
@@ -84,12 +93,12 @@ const Contact: React.FC = () => {
 
             <div className="contact__form-div">
               <label htmlFor="" className="contact__form-tag">
-                Mail
+                {t("contact.form.mail.label")}
               </label>
               <input
                 type="email"
                 name="user_email"
-                placeholder="Your email"
+                placeholder={t("contact.form.mail.placeholder") || ""}
                 className="contact__form-input"
                 required
               />
@@ -97,20 +106,20 @@ const Contact: React.FC = () => {
 
             <div className="contact__form-div contact__form-area">
               <label htmlFor="" className="contact__form-tag">
-                Message
+                {t("contact.form.message.label")}
               </label>
               <textarea
                 name="message"
                 cols={30}
                 rows={10}
-                placeholder="Your Message"
+                placeholder={t("contact.form.message.placeholder") || ""}
                 className="contact__form-input"
                 required
               />
             </div>
 
             <button type="submit" className="button">
-              Send Message
+            {t("contact.form.button") || ""}
             </button>
           </form>
         </div>

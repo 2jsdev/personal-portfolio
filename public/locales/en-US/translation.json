@@ -1,0 +1,134 @@
+{
+  "home": {
+    "greeting": "Hello, I'm",
+    "name": "Jordy Morales Roman",
+    "education": "Full-stack Developer",
+    "button": {
+      "download": "Download CV",
+      "talk": "Let's talk"
+    },
+    "scroll_down": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My introduction",
+    "info": {
+      "experience": {
+        "title": "Experience",
+        "subtitle": "4+ Years working"
+      },
+      "projects": {
+        "title": "Completed",
+        "subtitle": "10+ projects"
+      },
+      "companies": {
+        "title": "Worked",
+        "subtitle": "3 companies"
+      }
+    },
+    "description": "Full-stack Developer with 4+ years of experience developing web applications using JavaScript, TypeScript, ReactJS, NodeJS, and Services (REST) applying design patterns and architectures. I'm enthusiastic about learning technologies, I always try to learn new things. Looking forward to being part of an innovative team.",
+    "button": "Contact Me"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical level",
+    "frontend": "Frontend developer",
+    "backend": "Backend developer",
+    "level": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "JavaScript": "JavaScript",
+    "React": "React",
+    "Git": "Git",
+    "TypeScript": "TypeScript",
+    "Node.js": "Node.js",
+    "NestJS": "NestJS",
+    "Python": "Python",
+    "MySQL": "MySQL",
+    "PostgreSQL": "PostgreSQL",
+    "MongoDB": "MongoDB"
+  },
+  "qualification": {
+    "title": "Qualification",
+    "subtitle": "My personal journey",
+    "tabs": {
+      "work": {
+        "title": "Work",
+        "unosquare": {
+          "title": "Full-stack Developer",
+          "subtitle": "Unosquare - Bolivia",
+          "calendar": "Jun 2021 - Present"
+        },
+        "nearshore": {
+          "title": "Full-stack Developer",
+          "subtitle": "Nearshore Code - Bolivia",
+          "calendar": "Jun 2021 - Present"
+        },
+        "viva": {
+          "title": "Web Developer",
+          "subtitle": "VIVA - Bolivia",
+          "calendar": "Jul 2018 - Dec 2018"
+        }
+      },
+      "education": {
+        "title": "Education",
+        "university": {
+          "title": "System Engineer",
+          "subtitle": "Bolivia - University",
+          "calendar": "Feb 2019 - Aug 2021"
+        },
+        "institute": {
+          "title": "Computer Systems Analyst",
+          "subtitle": "Bolivia - Institute",
+          "calendar": "Mar 2015 - Jul 2018"
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Most recent work",
+    "filters": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Design"
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch",
+    "content": {
+      "title": "Talk to me",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "write_me": "Write me"
+    },
+    "form": {
+      "title": "Write me about your project",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Full Name"
+      },
+      "mail": {
+        "label": "Name",
+        "placeholder": "Your email"
+      },
+      "message": {
+        "label": "Name",
+        "placeholder": "Your Message"
+      },
+      "button": "Send Message"
+    }
+  },
+  "footer": {
+    "name": "Jordy",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects"
+  }
+}
