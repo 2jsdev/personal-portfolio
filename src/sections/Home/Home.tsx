@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { Canvas } from "react-three-fiber";
 import { OrbitControls } from "@react-three/drei";
-import Avatar from "../../components/Avatar";
+import Model from "../../components/Model";
 import Spinner from "../../components/Spinner";
 import "./Home.css";
 
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
                 <ambientLight intensity={0.5} />
                 <pointLight position={[35, 35, 0]} intensity={0.4} />
 
-                <Avatar position={[0, -0.1, 0]} />
+                <Model position={[0, 0, 0]} />
 
                 <OrbitControls
                   enablePan={false}
