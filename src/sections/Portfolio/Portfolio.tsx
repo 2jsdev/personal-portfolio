@@ -60,7 +60,7 @@ const Portfolio: React.FC = () => {
 
       <div className="portfolio__container container grid">
         <div className="portfolio__card mix frontend backend">
-          <img src="/assets/img/work1.jpg" alt="" className="portfolio__img" />
+          <img src="/assets/img/work1.avif" alt="" className="portfolio__img" />
 
           <h3 className="portfolio__title">Chat App</h3>
           <a href="#" className="portfolio__button">
@@ -69,7 +69,7 @@ const Portfolio: React.FC = () => {
         </div>
 
         <div className="portfolio__card mix frontend backend">
-          <img src="/assets/img/work2.jpg" alt="" className="portfolio__img" />
+          <img src="/assets/img/work2.avif" alt="" className="portfolio__img" />
 
           <h3 className="portfolio__title">Draw App</h3>
           <a href="#" className="portfolio__button">
@@ -78,7 +78,7 @@ const Portfolio: React.FC = () => {
         </div>
 
         <div className="portfolio__card mix design">
-          <img src="/assets/img/work3.jpg" alt="" className="portfolio__img" />
+          <img src="/assets/img/work3.avif" alt="" className="portfolio__img" />
 
           <h3 className="portfolio__title">Brand design</h3>
           <a href="#" className="portfolio__button">
@@ -87,7 +87,7 @@ const Portfolio: React.FC = () => {
         </div>
 
         <div className="portfolio__card mix frontend">
-          <img src="/assets/img/work4.jpg" alt="" className="portfolio__img" />
+          <img src="/assets/img/work4.avif" alt="" className="portfolio__img" />
 
           <h3 className="portfolio__title">Component Library</h3>
           <a href="#" className="portfolio__button">
@@ -96,7 +96,7 @@ const Portfolio: React.FC = () => {
         </div>
 
         <div className="portfolio__card mix frontend backend">
-          <img src="/assets/img/work5.jpg" alt="" className="portfolio__img" />
+          <img src="/assets/img/work5.avif" alt="" className="portfolio__img" />
 
           <h3 className="portfolio__title">Social Media App</h3>
           <a href="#" className="portfolio__button">
