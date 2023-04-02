@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import { useTranslation } from "react-i18next";
 import { ThemeProvider } from "./context/ThemeContext";
 import { LocaleProvider } from "./context/LocaleContext";
-import ScrollReveal from 'scrollreveal'
 import Header from "./components/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
@@ -32,9 +32,30 @@ const App: React.FC = () => {
     sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });
   }, []);
 
+  useEffect(() => {
+    const blob = document.getElementById("blob");
+    document.body.onpointermove = (event) => {
+      const { clientX, clientY } = event;
+      if (blob) {
+        blob.animate(
+          {
+            left: `${clientX}px`,
+            top: `${clientY}px`,
+          },
+          { duration: 3000, fill: "forwards" }
+        );
+      }
+    };
+    return () => {
+      document.body.onpointermove = null;
+    };
+  }, []);
+
   return (
     <ThemeProvider>
       <LocaleProvider>
+        <div id="blob"></div>
+        <div id="blur"></div>
         <Header />
         <Home />
         <About />

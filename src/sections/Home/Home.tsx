@@ -34,7 +34,7 @@ const Home: React.FC = () => {
         <div className="home__handle">
           <div className="home__avatar">
             <Suspense fallback={<Spinner />}>
-              <Canvas camera={{ position: [2, 0, 12.25], fov: 15 }}>
+              <Canvas camera={{ position: [2, 0, 12.25], fov: 16 }}>
                 <ambientLight intensity={0.5} />
                 <pointLight position={[35, 35, 0]} intensity={0.4} />
 
