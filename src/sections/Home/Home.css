@@ -40,7 +40,24 @@
   );
   border-radius: 10rem 10rem 1rem 1rem;
   overflow: hidden;
+
+  
 }
+
+/* @keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+} */
+
 
 .home__avatar {
   display: flex;
@@ -48,6 +65,7 @@
   align-items: center;
   width: 300px;
   height: 650px;
+  
 }
 
 .home__buttons {

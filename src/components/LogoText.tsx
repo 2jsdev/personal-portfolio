@@ -1,13 +1,12 @@
 import React from "react";
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { useGlobalContext } from "../contexts/GlobalContext";
 
 interface LogoProps extends React.ComponentPropsWithoutRef<"svg"> {
   size?: number;
 }
 
 const LogoText = ({ size = 110, ...props }: LogoProps) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useGlobalContext();
 
   return (
     <svg

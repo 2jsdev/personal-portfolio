@@ -56,6 +56,7 @@
   color: var(--first-color);
 }
 
+/*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (min-width: 992px) {
   .nav {

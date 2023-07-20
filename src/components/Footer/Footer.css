@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--first-color);
+  z-index: var(--z-content);
 }
 
 .footer__container {
@@ -45,6 +46,7 @@
   display: inline-flex;
 }
 
+/*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (min-width: 992px) {
   .footer__social-link {
@@ -52,24 +54,4 @@
     padding: 0.4rem;
     border-radius: 0.5rem;
   }
-}
-
-.custom-shape-divider-top-1677679359 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1677679359 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 103px;
-}
-
-.custom-shape-divider-top-1677679359 .shape-fill {
-  fill: var(--body-color);
 }
