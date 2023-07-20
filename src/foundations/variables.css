@@ -1,13 +1,11 @@
-
+/*=============== VARIABLES ===============*/
 :root {
-  --header-height: 3.5rem;
-
-  /* COLORS */
-  /* Color mode HSL(hue, saturation, lightness) */
   /*
-    Red: hsl(360, 89%, 52%)
-    Blue: hsl(196, 99%, 53%)
-    Teal: hsl(158, 100%, 41%)
+    COLORS:
+      HSL(hue, saturation, lightness) 
+      Red: hsl(360, 89%, 52%)
+      Blue: hsl(196, 99%, 53%)
+      Teal: hsl(158, 100%, 41%)
   */
   --first-hue: 360;
   --sat: 89%;
@@ -24,6 +22,8 @@
 
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
+
+  --header-height: 3.5rem;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -44,13 +44,15 @@
   --font-semibold: 600;
 
   /*========== z index ==========*/
+  --z-basic: 1;
+  --z-content: 2;
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
 /* Responsive typography */
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 992px) {
   :root {
     --biggest-font-size: 2.5rem;
     --normal-font-size: 1rem;
@@ -62,4 +64,3 @@
     --h3-font-size: 1.25rem;
   }
 }
-

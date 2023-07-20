@@ -73,12 +73,12 @@
 
 .contact__form-tag {
   position: absolute;
-  top: -0.75rem;
-  left: 1.25rem;
+  top: -1.5rem;
+  left: 1rem;
   font-size: var(--smaller-font-size);
   padding: 0.25rem;
-  background-color: var(--body-color);
-  z-index: 10;
+  background-color: transparent;
+  z-index: var(--z-tooltip);
 }
 
 .contact__form-input {
@@ -93,7 +93,7 @@
   outline: none;
   padding: 1.5rem;
   border-radius: 0.75rem;
-  z-index: 1;
+  z-index: var(--z-basic);
 }
 
 .contact__form-area {
@@ -104,6 +104,7 @@
   resize: none;
 }
 
+/*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .contact__info {

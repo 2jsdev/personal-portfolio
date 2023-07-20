@@ -1,14 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
-import { useLocale } from "../../context/LocaleContext";
-import { ThemeContext } from "../../context/ThemeContext";
+import React, { useEffect, useState } from "react";
+import { useGlobalContext } from "../../contexts/GlobalContext";
 import LogoText from "../LogoText";
 import NavMenu from "../NavMenu/NavMenu";
 import Switch from "../Switch";
 import "./Header.css";
 
 const Header: React.FC = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-  const { locale, changeLocale } = useLocale();
+  const { theme, toggleTheme, locale, changeLocale } = useGlobalContext();
   const [scrolling, setScrolling] = useState(false);
 
   const handleScroll = () => {
