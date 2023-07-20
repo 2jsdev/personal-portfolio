@@ -115,11 +115,11 @@
         "placeholder": "Your Full Name"
       },
       "mail": {
-        "label": "Name",
+        "label": "Email",
         "placeholder": "Your email"
       },
       "message": {
-        "label": "Name",
+        "label": "Message",
         "placeholder": "Your Message"
       },
       "button": "Send Message"
