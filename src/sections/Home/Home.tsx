@@ -5,9 +5,16 @@ import { OrbitControls } from "@react-three/drei";
 import Model from "../../components/Model";
 import Spinner from "../../components/Spinner";
 import "./Home.css";
+import { useGlobalContext } from "../../contexts/GlobalContext";
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const { locale } = useGlobalContext();
+
+  const englishPDF = "https://docs.google.com/document/d/1GMqTz585Dsl0h7Xq00tb22hCIo0HZAuK85bxqP1EPaU/export?format=pdf";
+  const spanishPDF = "https://docs.google.com/document/d/1B8VxZEWJ4xK-1lIbPVxluIzgyS_KKyDL3afC31Xq8bI/export?format=pdf";
+
+  const currentPDF = locale === 'es-BO' ? spanishPDF : englishPDF;
 
   return (
     <section className="home section" id="home">
@@ -20,7 +27,7 @@ const Home: React.FC = () => {
           <div className="home__buttons">
             <a
               download
-              href="assets/pdf/Jordy-CV.pdf"
+              href={currentPDF}
               className="button button--ghost"
             >
               {t("home.button.download")}
