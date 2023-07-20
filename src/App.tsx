@@ -1,17 +1,19 @@
 import React, { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+import ScrollReveal from 'scrollreveal'
 import { useTranslation } from "react-i18next";
-import { ThemeProvider } from "./context/ThemeContext";
-import { LocaleProvider } from "./context/LocaleContext";
+import { GlobalProvider } from './contexts/GlobalContext'
+
+import Spinner from "./components/Spinner";
 import Header from "./components/Header";
+
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Qualification from "./sections/Qualification";
 import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
+
 import Footer from "./components/Footer";
-import Spinner from "./components/Spinner";
 
 const sr = ScrollReveal({
   origin: "top",
@@ -23,8 +25,6 @@ const sr = ScrollReveal({
 const App: React.FC = () => {
   const { i18n } = useTranslation();
   const i18nInitialized = i18n.isInitialized;
-
-  if (!i18nInitialized) return <Spinner />;
 
   useEffect(() => {
     sr.reveal(`.home__data`);
@@ -51,22 +51,24 @@ const App: React.FC = () => {
     };
   }, []);
 
+  if (!i18nInitialized) return <Spinner />;
+
   return (
-    <ThemeProvider>
-      <LocaleProvider>
+    <GlobalProvider>
+      <Header />
+      <main className="main">
         <div id="blob"></div>
         <div id="blur"></div>
-        <Header />
         <Home />
         <About />
         <Skills />
         <Qualification />
         <Portfolio />
         <Contact />
-        <Footer />
-      </LocaleProvider>
-    </ThemeProvider>
-  );
-};
+      </main>
+      <Footer />
+    </GlobalProvider>
+  )
+}
 
-export default App;
+export default App

@@ -70,7 +70,8 @@ img {
 
 .section {
   padding: 4.5rem 0 1rem;
-  z-index: 1000;
+  position: relative;
+  z-index: var(--z-content);
 }
 
 .section__title,
@@ -166,9 +167,6 @@ body.light-theme {
   .section {
     padding: 6.5rem 0 1rem;
   }
-  .section__title {
-    /* margin-bottom: 3.5rem; */
-  }
 }
 
 #blob {
@@ -192,7 +190,7 @@ body.light-theme {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: var(--z-basic);
   backdrop-filter: blur(12vmax);
 }
 
