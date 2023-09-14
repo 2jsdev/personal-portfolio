@@ -46,9 +46,8 @@ const Header: React.FC = () => {
 
           <i
             onClick={() => toggleTheme()}
-            className={`${
-              theme === "light" ? "bx bx-sun" : "bx bx-moon"
-            } change-theme`}
+            className={`${theme === "light" ? "bx bx-moon" : "bx bx-sun"
+              } change-theme`}
           />
         </div>
       </nav>
