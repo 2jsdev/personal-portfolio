@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import { useFrame } from "react-three-fiber";
+import { useFrame } from "@react-three/fiber";
 import { GLTF } from "three-stdlib";
 
 type GLTFResult = GLTF & {
@@ -67,13 +67,13 @@ interface ModelProps {
 }
 
 const Model: React.FC<ModelProps> = (props) => {
-  const mesh = useRef<any>();
-  const group = useRef<any>();
+  const refMesh = useRef<any>();
+  const refGroup = useRef<any>();
   const { nodes, materials, animations } = useGLTF("/model.glb") as GLTFResult;
-  const { actions } = useAnimations(animations, group);
+  const { actions } = useAnimations(animations, refGroup);
 
   useFrame(() => {
-    if (mesh.current) mesh.current.rotation.y += 0.005;
+    if (refMesh.current) refMesh.current.rotation.y += 0.005;
   });
 
   useEffect(() => {
@@ -86,8 +86,8 @@ const Model: React.FC<ModelProps> = (props) => {
   }, []);
 
   return (
-    <mesh ref={mesh} {...props}>
-      <group ref={group} {...props} dispose={null}>
+    <mesh ref={refMesh} {...props}>
+      <group ref={refGroup} {...props} dispose={null}>
         <group name="Scene">
           <group name="Armature">
             <primitive object={nodes.Hips} />
