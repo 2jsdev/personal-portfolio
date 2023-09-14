@@ -9,27 +9,28 @@
     "preview": "vite preview --host"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.10.0",
-    "@react-three/drei": "^9.56.27",
-    "i18next": "^22.4.10",
-    "i18next-browser-languagedetector": "^7.0.1",
-    "i18next-http-backend": "^2.1.1",
+    "@emailjs/browser": "^3.11.0",
+    "@react-three/drei": "^9.83.9",
+    "@react-three/fiber": "^8.14.1",
+    "i18next": "^23.5.1",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-http-backend": "^2.2.2",
     "mixitup": "^3.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^12.2.0",
-    "react-three-fiber": "^6.0.13",
+    "react-i18next": "^13.2.2",
     "scrollreveal": "^4.0.9",
-    "three": "^0.150.0",
-    "three-stdlib": "^2.21.8"
+    "three": "^0.156.1",
+    "three-stdlib": "^2.26.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "@types/scrollreveal": "^0.0.8",
-    "@vitejs/plugin-react-swc": "^3.0.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0",
-    "vite-plugin-pwa": "^0.16.4"
+    "@types/three": "^0.156.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-pwa": "^0.16.5"
   }
 }

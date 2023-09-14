@@ -1,11 +1,12 @@
 import React, { Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { Canvas } from "react-three-fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Model from "../../components/Model";
 import Spinner from "../../components/Spinner";
-import "./Home.css";
 import { useGlobalContext } from "../../contexts/GlobalContext";
+
+import "./Home.css";
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -42,13 +43,11 @@ const Home: React.FC = () => {
           <div className="home__avatar">
             <Suspense fallback={<Spinner />}>
               <Canvas camera={{ position: [2, 0, 12.25], fov: 16 }}>
-                <ambientLight intensity={0.5} />
-                <pointLight position={[35, 35, 0]} intensity={0.4} />
+                <ambientLight intensity={3} />
 
                 <Model position={[0, 0, 0]} />
 
                 <OrbitControls
-                  enablePan={false}
                   enableZoom={false}
                   maxPolarAngle={Math.PI / 3}
                   minPolarAngle={Math.PI / 3}
