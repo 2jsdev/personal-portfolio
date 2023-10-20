@@ -186,6 +186,14 @@ body.light-theme {
   opacity: 0.8;
 }
 
+.light-theme #blob {
+  background: linear-gradient(
+    180deg,
+    hsla(var(--first-hue), var(--sat), 90%, 1),
+    hsla(var(--first-hue), var(--sat), 90%, 0.2)
+  );
+}
+
 #blur {
   height: 100%;
   width: 100%;

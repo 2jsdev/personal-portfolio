@@ -8,6 +8,51 @@ const ACTIVE_CLASS = "active-portfolio";
 const Portfolio: React.FC = () => {
   const { t } = useTranslation();
 
+  const projects = [
+    {
+      title: "Draw App",
+      image: "/assets/img/jdraw.avif",
+      githubLink: "https://github.com/2jsdev/jdraw",
+      demoLink: "https://jdraw.2jsdev.me/",
+      filters: ["frontend"],
+    },
+    {
+      title: "@2jsdev/icons",
+      image: "/assets/img/icons.avif",
+      githubLink: "https://github.com/2jsdev/icons",
+      demoLink: "https://www.npmjs.com/package/@2jsdev/icons",
+      filters: ["frontend", "library"],
+    },
+    {
+      title: "Chat App",
+      image: "/assets/img/work1.avif",
+      githubLink: "#",
+      demoLink: "#",
+      filters: ["frontend", "backend"],
+    },
+    // {
+    //   title: "Brand design",
+    //   image: "/assets/img/work3.avif",
+    //   githubLink: "#",
+    //   demoLink: "#",
+    //   filters: ["design"],
+    // },
+    {
+      title: "Component Library",
+      image: "/assets/img/work4.avif",
+      githubLink: "#",
+      demoLink: "#",
+      filters: ["frontend", "library"],
+    },
+    {
+      title: "Social Media App",
+      image: "/assets/img/work5.avif",
+      githubLink: "#",
+      demoLink: "#",
+      filters: ["frontend", "backend"],
+    },
+  ];
+
   useEffect(() => {
     const tabs = document.querySelectorAll(".portfolio__item");
 
@@ -53,56 +98,29 @@ const Portfolio: React.FC = () => {
         <span className="portfolio__item" data-filter=".backend">
           {t("portfolio.filters.backend")}
         </span>
-        <span className="portfolio__item" data-filter=".design">
-          {t("portfolio.filters.design")}
+        <span className="portfolio__item" data-filter=".library">
+          {t("portfolio.filters.library")}
         </span>
+        {/* <span className="portfolio__item" data-filter=".design">
+          {t("portfolio.filters.design")}
+        </span> */}
       </div>
 
       <div className="portfolio__container container grid">
-        <div className="portfolio__card mix frontend backend">
-          <img src="/assets/img/work1.avif" alt="" className="portfolio__img" />
-
-          <h3 className="portfolio__title">Chat App</h3>
-          <a href="#" className="portfolio__button">
-            Demo <i className="bx bx-right-arrow-alt portfolio__icon" />
-          </a>
-        </div>
-
-        <div className="portfolio__card mix frontend backend">
-          <img src="/assets/img/work2.avif" alt="" className="portfolio__img" />
-
-          <h3 className="portfolio__title">Draw App</h3>
-          <a href="#" className="portfolio__button">
-            Demo <i className="bx bx-right-arrow-alt portfolio__icon" />
-          </a>
-        </div>
-
-        <div className="portfolio__card mix design">
-          <img src="/assets/img/work3.avif" alt="" className="portfolio__img" />
-
-          <h3 className="portfolio__title">Brand design</h3>
-          <a href="#" className="portfolio__button">
-            Demo <i className="bx bx-right-arrow-alt portfolio__icon" />
-          </a>
-        </div>
-
-        <div className="portfolio__card mix frontend">
-          <img src="/assets/img/work4.avif" alt="" className="portfolio__img" />
-
-          <h3 className="portfolio__title">Component Library</h3>
-          <a href="#" className="portfolio__button">
-            Demo <i className="bx bx-right-arrow-alt portfolio__icon" />
-          </a>
-        </div>
-
-        <div className="portfolio__card mix frontend backend">
-          <img src="/assets/img/work5.avif" alt="" className="portfolio__img" />
-
-          <h3 className="portfolio__title">Social Media App</h3>
-          <a href="#" className="portfolio__button">
-            Demo <i className="bx bx-right-arrow-alt portfolio__icon" />
-          </a>
-        </div>
+        {projects.map((project, index) => (
+          <div key={index} className={`portfolio__card mix ${project.filters.join(" ")}`}>
+            <img src={project.image} alt={project.title} className="portfolio__img" />
+            <h3 className="portfolio__title">{project.title}</h3>
+            <div className="portfolio__buttons">
+              <a href={project.githubLink} target="_blank" className="portfolio__button">
+                GitHub
+              </a>
+              <a href={project.demoLink} target="_blank" className="portfolio__button portfolio__button-primary">
+                Live Demo
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
