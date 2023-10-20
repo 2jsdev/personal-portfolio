@@ -41,6 +41,10 @@
   margin-bottom: 0.25rem;
 }
 
+.portfolio__buttons {
+  display: flex;
+}
+
 .portfolio__button {
   width: max-content;
   color: var(--first-color);
@@ -48,10 +52,19 @@
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--first-color);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .portfolio__button:hover .portfolio__icon {
   transform: translateX(0.25rem);
+}
+
+.portfolio__button-primary {
+  background-color: var(--first-color);
+  color: var(--body-color);
 }
 
 .portfolio__icon {
@@ -107,5 +120,3 @@
     margin-bottom: 0.5rem;
   }
 }
-
-

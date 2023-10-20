@@ -96,7 +96,8 @@
       "all": "All",
       "frontend": "Frontend",
       "backend": "Backend",
-      "design": "Design"
+      "design": "Design",
+      "library": "Library"
     }
   },
   "contact": {
