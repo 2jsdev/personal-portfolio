@@ -1,6 +1,11 @@
 # Stage 1: Build the React app with Vite
 FROM node:alpine as builder
 
+# Set environment variables
+ENV NODE_ENV=production
+# Incrementar el límite de memoria de heap
+ENV NODE_OPTIONS="--max-old-space-size=4096"
+
 # Set working directory
 WORKDIR /app
 
