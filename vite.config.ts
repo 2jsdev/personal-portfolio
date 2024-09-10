@@ -40,4 +40,11 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
 export default defineConfig({
   base: "./",
   plugins: [react(), VitePWA(manifestForPlugin)],
+  server: {
+    host: true,
+    port: 5173,
+    watch: {
+      usePolling: true,
+    },
+  },
 });
