@@ -10,6 +10,13 @@ const Portfolio: React.FC = () => {
 
   const projects = [
     {
+      title: "LinkTree Clone",
+      image: "/assets/img/linktree-clone.avif",
+      githubLink: "https://github.com/2jsdev/linktree",
+      demoLink: "https://linktree.2jsdev.me/",
+      filters: ["frontend", "backend"],
+    },
+    {
       title: "Draw App",
       image: "/assets/img/jdraw.avif",
       githubLink: "https://github.com/2jsdev/jdraw",
@@ -21,36 +28,22 @@ const Portfolio: React.FC = () => {
       image: "/assets/img/icons.avif",
       githubLink: "https://github.com/2jsdev/icons",
       demoLink: "https://www.npmjs.com/package/@2jsdev/icons",
-      filters: ["frontend", "library"],
-    },
-    {
-      title: "Chat App",
-      image: "/assets/img/work1.avif",
-      githubLink: "#",
-      demoLink: "#",
-      filters: ["frontend", "backend"],
+      filters: ["library"],
     },
     // {
-    //   title: "Brand design",
-    //   image: "/assets/img/work3.avif",
+    //   title: "Component Library",
+    //   image: "/assets/img/work4.avif",
     //   githubLink: "#",
     //   demoLink: "#",
-    //   filters: ["design"],
+    //   filters: ["frontend", "library"],
     // },
-    {
-      title: "Component Library",
-      image: "/assets/img/work4.avif",
-      githubLink: "#",
-      demoLink: "#",
-      filters: ["frontend", "library"],
-    },
-    {
-      title: "Social Media App",
-      image: "/assets/img/work5.avif",
-      githubLink: "#",
-      demoLink: "#",
-      filters: ["frontend", "backend"],
-    },
+    // {
+    //   title: "Social Media App",
+    //   image: "/assets/img/work5.avif",
+    //   githubLink: "#",
+    //   demoLink: "#",
+    //   filters: ["frontend", "backend"],
+    // },
   ];
 
   useEffect(() => {
