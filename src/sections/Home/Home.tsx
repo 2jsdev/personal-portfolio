@@ -12,8 +12,8 @@ const Home: React.FC = () => {
   const { t } = useTranslation();
   const { locale } = useGlobalContext();
 
-  const englishPDF = "https://docs.google.com/document/d/1GMqTz585Dsl0h7Xq00tb22hCIo0HZAuK85bxqP1EPaU/export?format=pdf";
-  const spanishPDF = "https://docs.google.com/document/d/1B8VxZEWJ4xK-1lIbPVxluIzgyS_KKyDL3afC31Xq8bI/export?format=pdf";
+  const englishPDF = "https://docs.google.com/document/d/1BwD0IV9QYS-4Tm1eshnAVOdEbayS1Q0M/export?format=pdf";
+  const spanishPDF = "https://docs.google.com/document/d/17wnExGijJTmLzgbgPWI8ldelxUwD1_vr/export?format=pdf";
 
   const currentPDF = locale === 'es-BO' ? spanishPDF : englishPDF;
 
