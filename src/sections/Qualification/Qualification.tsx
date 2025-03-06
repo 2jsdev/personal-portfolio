@@ -92,6 +92,21 @@ const Qualification: React.FC = () => {
               </div>
               <div>
                 <h3 className="qualification__title">
+                  {t("qualification.tabs.work.conversica.title")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.tabs.work.conversica.subtitle")}
+                </span>
+                <div className="qualification__calendar">
+                  <i className="bx bxs-calendar" />
+                  {t("qualification.tabs.work.conversica.calendar")}
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
                   {t("qualification.tabs.work.nearshore.title")}
                 </h3>
                 <span className="qualification__subtitle">
@@ -102,9 +117,17 @@ const Qualification: React.FC = () => {
                   {t("qualification.tabs.work.nearshore.calendar")}
                 </div>
               </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
             </div>
 
             <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+              </div>
               <div>
                 <h3 className="qualification__title">
                   {t("qualification.tabs.work.viva.title")}
@@ -116,9 +139,6 @@ const Qualification: React.FC = () => {
                   <i className="bx bxs-calendar" />
                   {t("qualification.tabs.work.viva.calendar")}
                 </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
               </div>
             </div>
           </div>

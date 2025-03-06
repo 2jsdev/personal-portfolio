@@ -15,18 +15,18 @@
     "info": {
       "experience": {
         "title": "Experiencia",
-        "subtitle": "Más de 4 años trabajando"
+        "subtitle": "6+ años trabajando"
       },
       "projects": {
-        "title": "Proyectos completados",
-        "subtitle": "Más de 10 proyectos"
+        "title": "Completados",
+        "subtitle": "10+ proyectos"
       },
       "companies": {
-        "title": "Empresas en las que trabajé",
-        "subtitle": "3 empresas"
+        "title": "Trabajé en",
+        "subtitle": "4 empresas"
       }
     },
-    "description": "Desarrollador Full-stack con más de 4 años de experiencia desarrollando aplicaciones web utilizando JavaScript, TypeScript, ReactJS, NodeJS y servicios (REST) aplicando patrones y arquitecturas de diseño. Soy entusiasta de aprender tecnologías, siempre trato de aprender cosas nuevas. Buscando ser parte de un equipo innovador.",
+    "description": "Desarrollador Full-stack Senior con más de 6 años de experiencia diseñando y desarrollando aplicaciones web escalables y servicios. Experto en JavaScript, TypeScript y frameworks modernos como React, Next.js y Node.js. Especializado en la implementación de Clean Architecture, Domain-Driven Design (DDD) y pipelines de CI/CD, garantizando mantenibilidad y alto rendimiento. Apasionado por crear experiencias de usuario fluidas y por colaborar con equipos dinámicos para ofrecer soluciones innovadoras.",
     "button": "Contáctame"
   },
   "skills": {
@@ -59,9 +59,14 @@
       "work": {
         "title": "Experiencia laboral",
         "unosquare": {
-          "title": "Desarrollador Full-stack",
+          "title": "Senior Software Engineer",
           "subtitle": "Unosquare - Bolivia",
           "calendar": "Jun 2021 - Presente"
+        },
+        "conversica": {
+          "title": "Ingeniero de Software",
+          "subtitle": "Conversica (via Unosquare) - Remoto",
+          "calendar": "Ago 2021 - Ene 2025"
         },
         "nearshore": {
           "title": "Desarrollador Full-stack",

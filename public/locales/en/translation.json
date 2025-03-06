@@ -15,7 +15,7 @@
     "info": {
       "experience": {
         "title": "Experience",
-        "subtitle": "4+ Years working"
+        "subtitle": "6+ Years working"
       },
       "projects": {
         "title": "Completed",
@@ -23,10 +23,10 @@
       },
       "companies": {
         "title": "Worked",
-        "subtitle": "3 companies"
+        "subtitle": "4 companies"
       }
     },
-    "description": "Full-stack Developer with 4+ years of experience developing web applications using JavaScript, TypeScript, ReactJS, NodeJS, and Services (REST) applying design patterns and architectures. I'm enthusiastic about learning technologies, I always try to learn new things. Looking forward to being part of an innovative team.",
+    "description": "Senior Full-stack Developer with over 6 years of experience designing and developing scalable web applications and services. Proficient in JavaScript, TypeScript, and modern frameworks like React, Next.js, and Node.js. Adept at implementing Clean Architecture, Domain-Driven Design (DDD), and CI/CD pipelines, ensuring maintainability and high performance. Passionate about crafting seamless user experiences and collaborating with dynamic teams to deliver innovative solutions.",
     "button": "Contact Me"
   },
   "skills": {
@@ -59,9 +59,14 @@
       "work": {
         "title": "Work",
         "unosquare": {
-          "title": "Full-stack Developer",
+          "title": "Senior Software Engineer",
           "subtitle": "Unosquare - Bolivia",
           "calendar": "Jun 2021 - Present"
+        },
+        "conversica": {
+          "title": "Software Engineer",
+          "subtitle": "Conversica (via Unosquare) - Remote",
+          "calendar": "Aug 2021 - Jan 2025"
         },
         "nearshore": {
           "title": "Full-stack Developer",
