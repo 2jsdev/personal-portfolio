@@ -10,10 +10,10 @@ const Portfolio: React.FC = () => {
 
   const projects = [
     {
-      title: "LinkTree Clone",
-      image: "/assets/img/linktree-clone.avif",
-      githubLink: "https://github.com/2jsdev/linktree",
-      demoLink: "https://linktree.2jsdev.me/",
+      title: "Wookielink",
+      image: "/assets/img/wookielink.png",
+      githubLink: "https://github.com/2jsdev/wookielink",
+      demoLink: "https://wookiel.ink/",
       filters: ["frontend", "backend"],
     },
     {
