@@ -40,6 +40,7 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
 export default defineConfig({
   base: "./",
   plugins: [react(), VitePWA(manifestForPlugin)],
+  assetsInclude: ["**/*.glb"],
   server: {
     host: true,
     port: 5173,

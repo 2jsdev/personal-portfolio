@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Model from "../../components/Model";
+import { Model } from "../../components/Model";
 import Spinner from "../../components/Spinner";
 import { useGlobalContext } from "../../contexts/GlobalContext";
 
