@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <span className="section__subtitle">{t("about.subtitle")}</span>
       <div className="about__container container grid">
         <img
-          src="assets/img/profile.avif"
+          src="assets/img/profile.png"
           alt="Profile"
           className="about__img"
         />
