@@ -15,7 +15,7 @@
     "info": {
       "experience": {
         "title": "Experiencia",
-        "subtitle": "6+ años trabajando"
+        "subtitle": "{{years}}+ años trabajando"
       },
       "projects": {
         "title": "Completados",
@@ -23,10 +23,10 @@
       },
       "companies": {
         "title": "Trabajé en",
-        "subtitle": "4 empresas"
+        "subtitle": "5 empresas"
       }
     },
-    "description": "Desarrollador Full-stack Senior con más de 6 años de experiencia diseñando y desarrollando aplicaciones web escalables y servicios. Experto en JavaScript, TypeScript y frameworks modernos como React, Next.js y Node.js. Especializado en la implementación de Clean Architecture, Domain-Driven Design (DDD) y pipelines de CI/CD, garantizando mantenibilidad y alto rendimiento. Apasionado por crear experiencias de usuario fluidas y por colaborar con equipos dinámicos para ofrecer soluciones innovadoras.",
+    "description": "Desarrollador Full-stack Senior con más de {{years}}+ años de experiencia diseñando y desarrollando aplicaciones web escalables y servicios. Experto en JavaScript, TypeScript y frameworks modernos como React, Next.js y Node.js. Especializado en la implementación de Clean Architecture, Domain-Driven Design (DDD) y pipelines de CI/CD, garantizando mantenibilidad y alto rendimiento. Apasionado por crear experiencias de usuario fluidas y por colaborar con equipos dinámicos para ofrecer soluciones innovadoras.",
     "button": "Contáctame"
   },
   "skills": {
@@ -63,9 +63,14 @@
           "subtitle": "Unosquare - Bolivia",
           "calendar": "Jun 2021 - Presente"
         },
+        "lifechurch": {
+          "title": "Senior/Lead React-Next.JS Engineer",
+          "subtitle": "LifeChurch - Remoto",
+          "calendar": "Mar 2025 - Sep 2025"
+        },
         "conversica": {
           "title": "Ingeniero de Software",
-          "subtitle": "Conversica (via Unosquare) - Remoto",
+          "subtitle": "Conversica - Remoto",
           "calendar": "Ago 2021 - Ene 2025"
         },
         "nearshore": {
@@ -82,14 +87,14 @@
       "education": {
         "title": "Educación",
         "university": {
-          "title": "Ingeniero de Sistemas",
-          "subtitle": "Bolivia - Universidad",
+          "title": "Licenciatura en Ingeniería de Sistemas",
+          "subtitle": "UCATEC",
           "calendar": "Feb 2019 - Ago 2021"
         },
-        "institute": {
-          "title": "Analista en Sistemas Informáticos",
-          "subtitle": "Bolivia - Instituto",
-          "calendar": "Mar 2015 - Jul 2018"
+        "diploma": {
+          "title": "Educación Superior por Competencias, Mención en Enseñanza Universitaria",
+          "subtitle": "UCATEC",
+          "calendar": "Ago 2022 - Feb 2023"
         }
       }
     }

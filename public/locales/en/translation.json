@@ -15,7 +15,7 @@
     "info": {
       "experience": {
         "title": "Experience",
-        "subtitle": "6+ Years working"
+        "subtitle": "{{years}}+ Years working"
       },
       "projects": {
         "title": "Completed",
@@ -23,10 +23,10 @@
       },
       "companies": {
         "title": "Worked",
-        "subtitle": "4 companies"
+        "subtitle": "5 companies"
       }
     },
-    "description": "Senior Full-stack Developer with over 6 years of experience designing and developing scalable web applications and services. Proficient in JavaScript, TypeScript, and modern frameworks like React, Next.js, and Node.js. Adept at implementing Clean Architecture, Domain-Driven Design (DDD), and CI/CD pipelines, ensuring maintainability and high performance. Passionate about crafting seamless user experiences and collaborating with dynamic teams to deliver innovative solutions.",
+    "description": "Senior Full-stack Developer with over {{years}}+ years of experience designing and developing scalable web applications and services. Proficient in JavaScript, TypeScript, and modern frameworks like React, Next.js, and Node.js. Adept at implementing Clean Architecture, Domain-Driven Design (DDD), and CI/CD pipelines, ensuring maintainability and high performance. Passionate about crafting seamless user experiences and collaborating with dynamic teams to deliver innovative solutions.",
     "button": "Contact Me"
   },
   "skills": {
@@ -63,9 +63,14 @@
           "subtitle": "Unosquare - Bolivia",
           "calendar": "Jun 2021 - Present"
         },
+        "lifechurch": {
+          "title": "Senior/Lead React-Next.JS Engineer",
+          "subtitle": "LifeChurch - Remote",
+          "calendar": "Mar 2025 - Sep 2025"
+        },
         "conversica": {
           "title": "Software Engineer",
-          "subtitle": "Conversica (via Unosquare) - Remote",
+          "subtitle": "Conversica - Remote",
           "calendar": "Aug 2021 - Jan 2025"
         },
         "nearshore": {
@@ -82,14 +87,14 @@
       "education": {
         "title": "Education",
         "university": {
-          "title": "System Engineer",
-          "subtitle": "Bolivia - University",
+          "title": "Bachelor's Degree in Systems Engineering",
+          "subtitle": "UCATEC",
           "calendar": "Feb 2019 - Aug 2021"
         },
-        "institute": {
-          "title": "Computer Systems Analyst",
-          "subtitle": "Bolivia - Institute",
-          "calendar": "Mar 2015 - Jul 2018"
+        "diploma": {
+          "title": "Higher Education by Competencies, Mention in University Teaching",
+          "subtitle": "UCATEC",
+          "calendar": "Aug 2022 - Feb 2023"
         }
       }
     }
