@@ -1,9 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { getYearsOfExperience } from "../../utils/experience";
 import "./About.css";
 
 const About: React.FC = () => {
   const { t } = useTranslation();
+  const yearsOfExperience = getYearsOfExperience();
 
   return (
     <section className="about section" id="about">
@@ -24,7 +26,7 @@ const About: React.FC = () => {
                 {t("about.info.experience.title")}
               </h3>
               <span className="about__subtitle">
-                {t("about.info.experience.subtitle")}
+                {t("about.info.experience.subtitle", { years: yearsOfExperience })}
               </span>
             </div>
 
@@ -48,7 +50,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <p className="about__description">{t("about.description")}</p>
+          <p className="about__description">{t("about.description", { years: yearsOfExperience })}</p>
 
           <a href="#contact" className="button">
             {t("about.button")}
