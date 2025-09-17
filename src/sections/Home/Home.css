@@ -8,6 +8,8 @@
 
 .home__data {
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .home__greeting,
@@ -20,13 +22,29 @@
   display: block;
   color: var(--title-color);
   margin-bottom: 0.25rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.light-theme .home__greeting {
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
 .home__education {
   color: var(--text-color);
   margin-bottom: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.light-theme .home__education {
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
 .home__name {
   font-size: var(--biggest-font-size);
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  font-weight: var(--font-semibold);
+}
+
+.light-theme .home__name {
+  text-shadow: 0 3px 6px rgba(255, 255, 255, 0.8);
 }
 
 .home__handle {
@@ -35,13 +53,13 @@
   height: 450px;
   background: linear-gradient(
     180deg,
-    hsla(var(--first-hue), var(--sat), var(--lig), 1),
-    hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
+    hsla(var(--first-hue), var(--sat), var(--lig), 0.8),
+    hsla(var(--first-hue), var(--sat), var(--lig), 0.1)
   );
   border-radius: 10rem 10rem 1rem 1rem;
   overflow: hidden;
-
-  
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 /* @keyframes rotate {
@@ -58,14 +76,12 @@
   }
 } */
 
-
 .home__avatar {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 300px;
   height: 650px;
-  
 }
 
 .home__buttons {
@@ -73,6 +89,8 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  position: relative;
+  z-index: 3;
 }
 
 .home__social,
@@ -148,7 +166,6 @@
     height: 550px;
   }
 }
-
 
 /* For large devices */
 @media screen and (min-width: 992px) {

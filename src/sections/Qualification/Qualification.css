@@ -32,17 +32,32 @@
 .qualification__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .qualification__title {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .qualification__subtitle {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .qualification__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
   margin-bottom: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .qualification__calendar {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .qualification__calendar > i {

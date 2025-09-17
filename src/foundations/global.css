@@ -24,6 +24,20 @@ body {
   color: var(--text-color);
   transition: 0.4s; /* for light mode animation */
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 h1,
@@ -101,6 +115,11 @@ body.light-theme {
   --text-color: hsl(var(--second-hue), 8%, 35%);
   --body-color: hsl(var(--second-hue), 100%, 99%);
   --container-color: #fff;
+}
+
+body.light-theme::before {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -189,9 +208,10 @@ body.light-theme {
 .light-theme #blob {
   background: linear-gradient(
     180deg,
-    hsla(var(--first-hue), var(--sat), 90%, 1),
-    hsla(var(--first-hue), var(--sat), 90%, 0.2)
+    hsla(var(--first-hue), var(--sat), 70%, 0.8),
+    hsla(var(--first-hue), var(--sat), 70%, 0.3)
   );
+  opacity: 0.6;
 }
 
 #blur {

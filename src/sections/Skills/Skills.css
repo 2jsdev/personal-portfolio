@@ -21,6 +21,11 @@
   color: var(--first-color);
   text-align: center;
   margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.light-theme .skills__title {
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .skills__box {
@@ -49,10 +54,20 @@
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 18px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .skills__name {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .skills__level {
   font-size: var(--tiny-font-size);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .skills__level {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 /*=============== BREAKPOINTS ===============*/
