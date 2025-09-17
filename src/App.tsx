@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ScrollReveal from 'scrollreveal'
 import { useTranslation } from "react-i18next";
 import { GlobalProvider } from './contexts/GlobalContext'
+import { initializeClarity } from './config/clarity'
 
 import Spinner from "./components/Spinner";
 import Header from "./components/Header";
@@ -27,6 +28,9 @@ const App: React.FC = () => {
   const i18nInitialized = i18n.isInitialized;
 
   useEffect(() => {
+    // Initialize Microsoft Clarity
+    initializeClarity();
+
     sr.reveal(`.home__data`);
     sr.reveal(`.home__handle`, { delay: 700 });
     sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: "bottom" });

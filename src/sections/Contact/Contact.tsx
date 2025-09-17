@@ -1,6 +1,7 @@
 import React, { useRef, FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
+import { trackContactFormSubmit } from "../../config/clarity";
 import "./Contact.css";
 
 const serviceId = import.meta.env.VITE_SERVICE_ID ?? "";
@@ -14,6 +15,9 @@ const Contact: React.FC = () => {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Track form submission
+    trackContactFormSubmit('email');
 
     emailjs.sendForm(serviceId, templateId, form.current!, publicKey).then(
       (result) => {
@@ -119,7 +123,7 @@ const Contact: React.FC = () => {
             </div>
 
             <button type="submit" className="button">
-            {t("contact.form.button") || ""}
+              {t("contact.form.button") || ""}
             </button>
           </form>
         </div>

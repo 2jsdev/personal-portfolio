@@ -5,6 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Model } from "../../components/Model";
 import Spinner from "../../components/Spinner";
 import { useGlobalContext } from "../../contexts/GlobalContext";
+import { trackCVDownload, trackContactButton, trackSocialLink } from "../../config/clarity";
 
 import "./Home.css";
 
@@ -30,10 +31,15 @@ const Home: React.FC = () => {
               download
               href={currentPDF}
               className="button button--ghost"
+              onClick={trackCVDownload}
             >
               {t("home.button.download")}
             </a>
-            <a href="#contact" className="button">
+            <a
+              href="#contact"
+              className="button"
+              onClick={trackContactButton}
+            >
               {t("home.button.talk")}
             </a>
           </div>
@@ -62,6 +68,7 @@ const Home: React.FC = () => {
             href="https://www.linkedin.com/in/jordymorales/"
             target="_blank"
             className="home__social-link"
+            onClick={() => trackSocialLink('linkedin')}
           >
             <i className="bx bxl-linkedin-square" />
           </a>
@@ -69,6 +76,7 @@ const Home: React.FC = () => {
             href="https://github.com/2jsdev"
             target="_blank"
             className="home__social-link"
+            onClick={() => trackSocialLink('github')}
           >
             <i className="bx bxl-github" />
           </a>
@@ -76,6 +84,7 @@ const Home: React.FC = () => {
             href="https://twitter.com/2jsdev"
             target="_blank"
             className="home__social-link"
+            onClick={() => trackSocialLink('twitter')}
           >
             <i className="bx bxl-twitter" />
           </a>

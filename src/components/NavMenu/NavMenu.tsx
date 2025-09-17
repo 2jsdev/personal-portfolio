@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { trackNavClick } from "../../config/clarity";
 import "./NavMenu.css";
 
 const NavMenu: React.FC = () => {
@@ -42,6 +43,7 @@ const NavMenu: React.FC = () => {
           <a
             href="#home"
             className={`nav__link ${activeLink === "#home" && "active-link"}`}
+            onClick={() => trackNavClick('home')}
           >
             <i className="bx bx-home-alt" />
           </a>
@@ -51,6 +53,7 @@ const NavMenu: React.FC = () => {
           <a
             href="#about"
             className={`nav__link ${activeLink === "#about" && "active-link"}`}
+            onClick={() => trackNavClick('about')}
           >
             <i className="bx bx-user" />
           </a>
@@ -60,6 +63,7 @@ const NavMenu: React.FC = () => {
           <a
             href="#skills"
             className={`nav__link ${activeLink === "#skills" && "active-link"}`}
+            onClick={() => trackNavClick('skills')}
           >
             <i className="bx bx-book" />
           </a>
@@ -68,9 +72,9 @@ const NavMenu: React.FC = () => {
         <li className="nav_item">
           <a
             href="#portfolio"
-            className={`nav__link ${
-              activeLink === "#portfolio" && "active-link"
-            }`}
+            className={`nav__link ${activeLink === "#portfolio" && "active-link"
+              }`}
+            onClick={() => trackNavClick('portfolio')}
           >
             <i className="bx bx-briefcase-alt-2" />
           </a>
@@ -79,9 +83,9 @@ const NavMenu: React.FC = () => {
         <li className="nav_item">
           <a
             href="#contact"
-            className={`nav__link ${
-              activeLink === "#contact" && "active-link"
-            }`}
+            className={`nav__link ${activeLink === "#contact" && "active-link"
+              }`}
+            onClick={() => trackNavClick('contact')}
           >
             <i className="bx bx-message-square-detail" />
           </a>

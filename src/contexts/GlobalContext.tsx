@@ -1,5 +1,6 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
 import i18n from "../i18n/config";
+import { trackThemeChange, trackLanguageChange } from "../config/clarity";
 
 type Locale = "en-US" | "es-BO";
 
@@ -12,9 +13,9 @@ interface GlobalContextProps {
 
 const GlobalContext = createContext<GlobalContextProps>({
   locale: "en-US",
-  changeLocale: (_locale: Locale) => {},
+  changeLocale: (_locale: Locale) => { },
   theme: "dark",
-  toggleTheme: () => {},
+  toggleTheme: () => { },
 });
 
 export const GlobalProvider: React.FC<{ children: React.ReactNode }> = ({
@@ -30,11 +31,18 @@ export const GlobalProvider: React.FC<{ children: React.ReactNode }> = ({
     if (locale !== lng) {
       void i18n.changeLanguage(lng);
       setLocale(lng);
+      // Track language change
+      trackLanguageChange(lng);
     }
   };
 
   const toggleTheme = () => {
-    setTheme((theme) => (theme === "light" ? "dark" : "light"));
+    setTheme((theme) => {
+      const newTheme = theme === "light" ? "dark" : "light";
+      // Track theme change
+      trackThemeChange(newTheme as 'light' | 'dark');
+      return newTheme;
+    });
   };
 
   useEffect(() => {

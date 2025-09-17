@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import mixitup from "mixitup";
+import { trackPortfolioProject } from "../../config/clarity";
 import "./Portfolio.css";
 
 const ACTIVE_CLASS = "active-portfolio";
@@ -47,6 +48,9 @@ const Portfolio: React.FC = () => {
   ];
 
   useEffect(() => {
+    // Track portfolio section view
+    trackPortfolioProject('portfolio_section', 'view');
+
     const tabs = document.querySelectorAll(".portfolio__item");
 
     function activeWork(this: any) {
@@ -105,10 +109,20 @@ const Portfolio: React.FC = () => {
             <img src={project.image} alt={project.title} className="portfolio__img" />
             <h3 className="portfolio__title">{project.title}</h3>
             <div className="portfolio__buttons">
-              <a href={project.githubLink} target="_blank" className="portfolio__button">
+              <a
+                href={project.githubLink}
+                target="_blank"
+                className="portfolio__button"
+                onClick={() => trackPortfolioProject(project.title, 'click')}
+              >
                 GitHub
               </a>
-              <a href={project.demoLink} target="_blank" className="portfolio__button portfolio__button-primary">
+              <a
+                href={project.demoLink}
+                target="_blank"
+                className="portfolio__button portfolio__button-primary"
+                onClick={() => trackPortfolioProject(project.title, 'click')}
+              >
                 Live Demo
               </a>
             </div>
