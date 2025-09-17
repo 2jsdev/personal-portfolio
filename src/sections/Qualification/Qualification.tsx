@@ -66,6 +66,11 @@ const Qualification: React.FC = () => {
             id="work"
           >
             <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
               <div>
                 <h3 className="qualification__title">
                   {t("qualification.tabs.work.unosquare.title")}
@@ -76,6 +81,21 @@ const Qualification: React.FC = () => {
                 <div className="qualification__calendar">
                   <i className="bx bxs-calendar" />
                   {t("qualification.tabs.work.unosquare.calendar")}
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                  {t("qualification.tabs.work.lifechurch.title")}
+                </h3>
+                <span className="qualification__subtitle">
+                  {t("qualification.tabs.work.lifechurch.subtitle")}
+                </span>
+                <div className="qualification__calendar">
+                  <i className="bx bxs-calendar" />
+                  {t("qualification.tabs.work.lifechurch.calendar")}
                 </div>
               </div>
               <div>
@@ -146,14 +166,14 @@ const Qualification: React.FC = () => {
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">
-                  {t("qualification.tabs.education.university.title")}
+                  {t("qualification.tabs.education.diploma.title")}
                 </h3>
                 <span className="qualification__subtitle">
-                  {t("qualification.tabs.education.university.subtitle")}
+                  {t("qualification.tabs.education.diploma.subtitle")}
                 </span>
                 <div className="qualification__calendar">
                   <i className="bx bxs-calendar" />
-                  {t("qualification.tabs.education.university.calendar")}
+                  {t("qualification.tabs.education.diploma.calendar")}
                 </div>
               </div>
               <div>
@@ -170,14 +190,14 @@ const Qualification: React.FC = () => {
 
               <div>
                 <h3 className="qualification__title">
-                  {t("qualification.tabs.education.institute.title")}
+                  {t("qualification.tabs.education.university.title")}
                 </h3>
                 <span className="qualification__subtitle">
-                  {t("qualification.tabs.education.institute.subtitle")}
+                  {t("qualification.tabs.education.university.subtitle")}
                 </span>
                 <div className="qualification__calendar">
                   <i className="bx bxs-calendar" />
-                  {t("qualification.tabs.education.institute.calendar")}
+                  {t("qualification.tabs.education.university.calendar")}
                 </div>
               </div>
             </div>
