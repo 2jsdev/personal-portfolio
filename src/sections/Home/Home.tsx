@@ -88,6 +88,15 @@ const Home: React.FC = () => {
           >
             <i className="bx bxl-twitter" />
           </a>
+          <a
+            href="https://www.instagram.com/2jsdev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home__social-link"
+            onClick={() => trackSocialLink('instagram')}
+          >
+            <i className="bx bxl-instagram" />
+          </a>
         </div>
 
         <a href="#about" className="home__scroll">

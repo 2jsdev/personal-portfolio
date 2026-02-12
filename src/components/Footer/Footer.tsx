@@ -42,6 +42,14 @@ const Footer: React.FC = () => {
           >
             <i className="bx bxl-twitter" />
           </a>
+          <a
+            href="https://www.instagram.com/2jsdev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__social-link"
+          >
+            <i className="bx bxl-instagram" />
+          </a>
         </ul>
       </div>
     </footer>
